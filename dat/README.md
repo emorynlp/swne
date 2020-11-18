@@ -20,6 +20,6 @@ Our dataset consists of JSON files formatted as follows:
 ## Statistics
 
  \ | Sentences  | Tokens | Entities |
-|:---:|:---:|:---:|:---:|:---:|:---:|
+|:---:|:---:|:---:|:---:|
 Original | 31,552 | 281,756 | 5,220 |
 Trimmed  | 21,449 | 244,817 | 5,218 |
