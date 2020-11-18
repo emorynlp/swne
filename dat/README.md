@@ -8,7 +8,7 @@ This is an open-source project led by the [Emory NLP Research Laboratory](http:/
 ## Resources
 
 * Latest release: [v1.0]()
-* [Annotation guidelines](docs/guidelines.md)
+* Annotation guidelines
 
 
 

@@ -1,0 +1,11 @@
+Switchboard Named Entity Corpus
+Copyright 2020
+
+Dialogue contents in this package are from the Switchboard Dialog Act Corpus:
+https://web.stanford.edu/~jurafsky/ws97/
+https://github.com/cgpotts/swda
+
+Dialogue contents in this package were originally from the Switchboard-1 Telephone Speech Corpus:
+https://catalog.ldc.upenn.edu/LDC97S62
+
+We do not claim neither the copyright nor the authorship of the dialogue contents in this package.
