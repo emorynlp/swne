@@ -1,17 +1,25 @@
-# Switchboard Named Entity Corpus
+# Dataset
 
-The Switchboard Named Entity Corpus (SwNE) extends the [Switchboard Dialog Act Corpus](https://github.com/cgpotts/swda) with named entity tags.
-Our annotation follows the guidelines from the [OntoNotes 5.0](https://catalog.ldc.upenn.edu/LDC2013T19) to tag named entities in the dialogue corpus.
-This is an open-source project led by the [Emory NLP Research Laboratory](http://nlp.cs.emory.edu) collaborated with the [Electronics and Telecommunications Research Institute](etri.re.kr/eng/main/main.etri).
+Our dataset consists of JSON files formatted as follows:
+
+* `doc_id`: the document ID inherited from the [SwDA](https://github.com/cgpotts/swda) corpus
+* `annotator`: the annotator ID
+* `text`: the entire contents of the dialogue in plain text
+* `sentences`: list of sentences where each sentence is represented by a list of tokens.
+* `name_entities` : list of entities where each entity is presented by a tuple of:
+  * `sentence_id`: the ID of the sentence where the entity is found
+  * `begin_token_index`: the index of the first token in the entity (staring from 0; inclusive)
+  * `end_token_index`: the index of the last token in the entity (staring from 0; exclusive)
+  * `label`: the entity label
+* `sentences_exc`: list of sentences where:
+  * Non-textual tokens are removed (e.g., \<Radio>)
+  * Sentences whose lengths are  `<=2` and do not include any entity are discarded
+* `name_entities_exc`: list of entities that are remapped to sentences in `sentences_exc`
 
 
-## Resources
+## Statistics
 
-* Latest release: [v1.0]()
-* Annotation guidelines
-
-
-
-## Contact
-
-* [Jinho D. Choi](http://www.cs.emory.edu/~choi)
+ \ | Sentences  | Tokens | Entities |
+|:---:|:---:|:---:|:---:|:---:|:---:|
+Original | 31,552 | 281,756 | 5,220 |
+Trimmed  | 21,449 | 244,817 | 5,218 |

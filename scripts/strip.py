@@ -78,11 +78,8 @@ def main(in_dir, out_dir, tout=None):
         json.dump(doc, out_file)
 
 
-
-
-
 if __name__ == "__main__":
-    IN_DIR = '../ner/gold'
-    OUT_DIR = '../ner/gold-x'
+    IN_DIR = '../dat/swne'
+    OUT_DIR = '../dat/swne_exc'
     # tout = open('tmp.txt', 'w')
     main(IN_DIR, OUT_DIR)
